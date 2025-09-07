@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: flex;
+            font-size: large;
+            font-weight: bold;
+            gap: 40px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+        }
+
+        .child:hover .dropdown {
+            display: block;
+            font-weight: 100;
+            border-top: 5px solid green;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">Courses
+            <div class="dropdown">
+                <p>DSA to Development</p>
+                <p>For Working Proffesionals</p>
+                <p>For Students</p>
+                <p>Full Stack Development</p>
+                <p>All Courses</p>
+            </div>
+        </div>
+
+        <div class="child">Tutorails
+            <div class="dropdown">
+                <p>Python</p>
+                <p>Java</p>
+                <p>DSA</p>
+                <p>Gate</p>
+                <p>DevOps</p>
+            </div>
+        </div>
+
+        <div class="child">Practice
+            <div class="dropdown">
+                <p>Practice Coding Problems</p>
+                <p>Nation Skillup - Free Courses</p>
+                <p>Problem of the Day</p>
+            </div>
+        </div>
+
+        <div class="child">jobs
+            <div class="dropdown">
+                <p>Become a Mentor</p>
+                <p>Apply now!</p>
+                <p>Post Jobs</p>
+                <p>Job Updates</p>
+                <p>Job-A-Thon:Hiring Challenge</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
