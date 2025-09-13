@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradients Grid</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 20px; 
+      justify-items: center; 
+      margin: 300px;
+    }
+
+        #grad1 {
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(to bottom right,red, orange, blue);
+        }
+
+        #grad2 {
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(orange, red);
+        }
+
+        #grad3 {
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(rgb(240, 99, 205),rgb(216, 242, 113));
+        }
+
+        #grad4 {
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(to right,rgb(39, 254, 183),rgb(253, 253, 102));
+        }
+
+        #grad5 {
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(to right,skyblue, rgb(31, 173, 249), rgb(76, 228, 94));
+        }
+
+        #grad6 {
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(to bottom left,rgb(247, 72, 221), orange, rgb(105, 250, 105));
+        }
+
+        #grad7 {
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(to bottom right,rgb(252, 252, 138), rgb(235, 103, 103), rgb(76, 76, 241));
+        }
+
+        #grad8 {
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(to bottom left,rgb(107, 10, 242), rgb(244, 141, 220), rgb(54, 172, 246));
+        }
+
+        #grad9 {
+            height: 200px;
+            width: 200px;
+            background-image: conic-gradient(red 10%, yellow 30%, green 40%, blue 50%, pink 60%);
+            border-radius: 50%;
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+    <div id="grad3"></div>
+    <div id="grad4"></div>
+    <div id="grad5"></div>
+    <div id="grad6"></div>
+    <div id="grad7"></div>
+    <div id="grad8"></div>
+    <div id="grad9">pie-chart</div>
+  </div>
+</body>
+</html>
